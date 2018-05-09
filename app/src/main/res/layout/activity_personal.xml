@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/drawer_layout_width"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/activity_main_tabLayout"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:background="@mipmap/drawer_layout_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_search_track_rv_image_height"
+        android:layout_marginTop="@dimen/activity_personal_rv_divider_size"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.angel.view.SWImageView
+            android:id="@+id/user_image"
+            android:layout_width="@dimen/activity_personal_head_image"
+            android:layout_height="@dimen/activity_personal_head_image"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_login_edit_text_height"
+            android:src="@mipmap/head_image2"
+            app:type="circle" />
+
+        <TextView
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_personal_up_divider_size"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/login_title"
+            android:textSize="@dimen/activity_main_second_divider_title"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_personal_up_divider_size"
+            android:text="@string/app_name"
+            android:textSize="@dimen/activity_main_top_daily_choose_title_typeface"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/activity_search_track_rv_image_height"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_main_margin1"
+            android:layout_marginBottom="@dimen/activity_main_margin1"
+            android:src="@mipmap/black_line"
+            android:layout_marginTop="@dimen/activity_personal_rv_divider_size"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/drawer_layout_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/activity_main_top_daily_choose_height">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</LinearLayout>

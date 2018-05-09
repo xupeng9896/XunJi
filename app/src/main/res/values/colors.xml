@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tabTextColor">#2875BC</color>
+    <color name="white">#F8F8F8</color>
+    <color name="gray">	#DCDDDD</color>
+    <color name="brightGray">#D3D3D3</color>
+    <color name="blackGray">#727172</color>
+    <color name="primary_bg">#C9C9CA</color>
+    <color name="black">#000000</color>
+    <color name="grayWhite">#F5F5F5</color>
+    <color name="transparent">#00000000</color>
+    <color name="search_track_item_color">#172987</color>
+    <color name="darkOrange">#E86F37</color>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/page_module_toolbar"/>
+
+    <Button
+        android:id="@+id/delete_user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_personal_info_edit_button_height"
+        android:layout_marginBottom="@dimen/activity_main_margin1"
+        android:text="删除用户"/>
+
+    <Button
+        android:id="@+id/delete_article"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_personal_info_edit_button_height"
+        android:text="删除文章"/>
+</LinearLayout>

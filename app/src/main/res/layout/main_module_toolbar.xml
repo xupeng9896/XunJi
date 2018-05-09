@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/grayWhite"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    <ImageView
+        android:id="@+id/personal"
+        android:layout_width="@dimen/activity_main_top_left_corner_width"
+        android:layout_height="@dimen/activity_main_top_left_corner_height"
+        android:layout_marginStart="@dimen/activity_main_margin1"
+        android:src="@mipmap/mine"
+        android:clickable="true"/>
+
+    <LinearLayout
+        android:id="@+id/search_btn"
+        android:layout_width="@dimen/activity_login_edit_text_width"
+        android:layout_height="@dimen/activity_main_top_left_corner_height"
+        android:layout_marginStart="@dimen/activity_main_searchView_left_divider"
+        android:layout_marginEnd="@dimen/activity_main_searchView_right_divider"
+        android:background="@drawable/search_style"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/activity_main_top_left_corner_height"
+            android:layout_height="@dimen/activity_personal_rv_divider_size"
+            android:layout_marginStart="@dimen/activity_main_margin1"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/search"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/message"
+        android:layout_width="@dimen/activity_main_top_left_corner_height"
+        android:layout_height="@dimen/activity_main_top_right_corner_width"
+        android:src="@mipmap/message"
+        android:clickable="true"/>
+</android.support.v7.widget.Toolbar>

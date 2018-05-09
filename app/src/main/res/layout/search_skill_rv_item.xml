@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/activity_search_tech_recycler_item_width"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_search_record_card_item_divider"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.angel.view.SWImageView
+        android:id="@+id/search_skill_rv_item_image"
+        android:layout_width="@dimen/activity_search_tech_recycler_item_card_width"
+        android:layout_height="@dimen/activity_search_tech_recycler_item_card_height"
+        android:layout_gravity="center_horizontal"
+        app:type="round"
+        app:borderWidth="1dp"
+        app:borderColor="0"
+        app:borderRadius="8dp"
+        android:layout_marginTop="@dimen/activity_search_tech_recycler_item_card_inside_divider"
+        android:layout_marginLeft="@dimen/activity_personal_choose_left_margin"
+        android:layout_marginRight="@dimen/activity_personal_choose_left_margin" />
+
+    <TextView
+        android:id="@+id/search_skill_rv_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_main_margin1"
+        android:layout_marginBottom="@dimen/activity_main_margin1"
+        android:textSize="@dimen/activity_search_tech_recycler_item_text_size" />
+
+</LinearLayout>

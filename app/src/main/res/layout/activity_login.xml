@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/login_bg">
+
+    <LinearLayout
+        android:layout_width="@dimen/activity_login_total_width"
+        android:layout_height="@dimen/activity_login_total_height"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@drawable/login_bg_color"
+        android:layout_marginTop="@dimen/activity_login_other_login_image_height">
+
+        <com.angel.view.SWImageView
+            android:id="@+id/head_image"
+            android:layout_width="@dimen/activity_login_head_image"
+            android:layout_height="@dimen/activity_login_head_image"
+            android:src="@mipmap/head_image2"
+            app:type="circle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_login_vertical_divider_size" />
+
+        <com.example.xupeng.xunji.utils.MyEditText
+            android:id="@+id/username"
+            android:layout_width="@dimen/activity_login_edit_text_width"
+            android:layout_height="@dimen/activity_login_edit_text_height"
+            android:background="@drawable/edit_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_login_vertical_divider_size"
+            android:hint="请输入昵称/手机号"
+            android:textSize="@dimen/activity_register_left_tv_text_size"
+            android:textColorHint="@color/brightGray"
+            android:textColor="@color/brightGray"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/activity_login_edit_text_width"
+            android:layout_height="@dimen/activity_login_edit_text_height"
+            android:background="@drawable/edit_style"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/activity_login_vertical_divider_size">
+
+            <com.example.xupeng.xunji.utils.MyEditText
+                android:id="@+id/password"
+                android:layout_width="@dimen/activity_login_edit_password_text_width"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:background="@null"
+                android:hint="请输入密码"
+                android:textSize="@dimen/activity_register_left_tv_text_size"
+                android:textColorHint="@color/brightGray"
+                android:textColor="@color/brightGray"/>
+
+            <ImageView
+                android:id="@+id/show_input_password"
+                android:layout_width="@dimen/activity_login_other_login_image_width"
+                android:layout_height="match_parent"
+                android:src="@mipmap/hide_pwd"
+                android:clickable="true"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="@dimen/activity_login_edit_text_width"
+            android:layout_height="@dimen/activity_login_edit_text_height"
+            android:layout_marginTop="@dimen/activity_login_vertical_divider_size"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_title"
+                android:textColor="@color/gray"
+                android:background="@drawable/edit_style"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_title"
+                android:textColor="@color/gray"
+                android:background="@drawable/edit_style"
+                android:layout_alignParentEnd="true"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/activity_login_edit_text_width"
+            android:layout_height="@dimen/activity_login_other_login_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_login_other_login_height">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="--------其他方式登录--------"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:textColor="@color/gray"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/activity_login_divider_size">
+
+                <ImageView
+                    android:id="@+id/style_phone"
+                    android:layout_width="@dimen/activity_login_other_login_image_width"
+                    android:layout_height="@dimen/activity_login_other_login_image_height"
+                    android:layout_marginStart="@dimen/activity_login_other_login_image_divider"
+                    android:src="@mipmap/phone"
+                    android:clickable="true"/>
+
+                <ImageView
+                    android:id="@+id/style_weibo"
+                    android:layout_width="@dimen/activity_login_other_login_image_width"
+                    android:layout_height="@dimen/activity_login_other_login_image_height"
+                    android:layout_marginStart="@dimen/activity_login_other_login_image_divider"
+
+                    android:src="@mipmap/weibo"
+                    android:clickable="true"/>
+
+                <ImageView
+                    android:id="@+id/style_qq"
+                    android:layout_width="@dimen/activity_login_other_login_image_width"
+                    android:layout_height="@dimen/activity_login_other_login_image_height"
+                    android:src="@mipmap/qq"
+                    android:layout_marginEnd="@dimen/activity_login_other_login_image_divider"
+                    android:layout_marginStart="@dimen/activity_login_other_login_image_divider"
+                    android:clickable="true" />
+
+                <ImageView
+                    android:id="@+id/style_weichat"
+                    android:layout_width="@dimen/activity_login_other_login_image_width"
+                    android:layout_height="@dimen/activity_login_other_login_image_height"
+                    android:layout_marginEnd="@dimen/activity_login_other_login_image_divider"
+                    android:src="@mipmap/weichat"
+                    android:clickable="true"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

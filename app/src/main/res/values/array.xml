@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sexSpinnerArray">
+        <item>未知</item>
+        <item>帅男</item>
+        <item>靓女</item>
+    </string-array>
+
+    <string-array name="pwdChooseArray">
+        <item>旧密码验证</item>
+        <item>手机验证</item>
+        <item>邮箱验证</item>
+    </string-array>
+
+    <string-array name="publishArticleArray">
+        <item>首页列表文章</item>
+        <item>寻记列表卡片</item>
+        <item>寻技上方卡片</item>
+        <item>寻迹列表文章</item>
+    </string-array>
+</resources>

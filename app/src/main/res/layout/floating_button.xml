@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.FloatingActionButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/floating_button"
+    android:layout_width="@dimen/activity_main_floatingButton"
+    android:layout_height="@dimen/activity_main_floatingButton"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginBottom="@dimen/activity_main_margin2"
+    android:layout_marginEnd="@dimen/activity_main_margin2"
+    android:backgroundTint="@color/blackGray"
+    android:layout_gravity="bottom|end"
+    android:src="@mipmap/posted"
+    app:borderWidth="0dp"
+    app:fabSize="normal">
+
+</android.support.design.widget.FloatingActionButton>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="ChongXun"/>
+    <version value="11"/>
+
+    <list>
+        <mapping class="com.example.xupeng.xunji.bean.UserInfo"/>
+        <mapping class="com.example.xupeng.xunji.bean.MainBannerItem"/>
+        <mapping class="com.example.xupeng.xunji.bean.MainPageRecyclerItem"/>
+        <mapping class="com.example.xupeng.xunji.bean.SearchRecordCard"/>
+        <mapping class="com.example.xupeng.xunji.bean.SearchSkillTopCard"/>
+        <mapping class="com.example.xupeng.xunji.bean.SearchSkillRecyclerItem"/>
+        <mapping class="com.example.xupeng.xunji.bean.SearchTrackRecyclerItem"/>
+
+    </list>
+</litepal>

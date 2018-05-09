@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">@color/black</item>
+        <item name="android:actionMenuTextColor">@color/black</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--tabIndicatorColor 修改指示器下面的颜色
+        tabSelectedTextColor 改变选中字体的颜色
+        tabTextColor 改变未选中字体的颜色
+        tabBackground 改变整个TabLayout背景颜色
+        tabMode 改变TabLayout的模式，scorllable表示可滑动的，fixed表示固定的
+        <item name="tabIndicatorColor">@color/green</item>
+        <item name="tabSelectedTextColor">@color/green</item>-->
+    <style name="Tab_style" parent="android:Widget">
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabBackground">@drawable/tab_background</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabTextAppearance">@style/CustomTabAppearance</item>
+    </style>
+
+    <style name="message_center_tab_style" parent="android:Widget">
+        <item name="tabIndicatorHeight">1dp</item>
+        <item name="tabBackground">@drawable/tab_background</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabTextAppearance">@style/CustomTabAppearance</item>
+    </style>
+    <style name="CustomTabAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+</resources>

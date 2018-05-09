@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/activity_search_record_card_height"
+    android:layout_marginLeft="@dimen/activity_search_record_card_title_height"
+    android:layout_marginRight="@dimen/activity_search_record_card_title_height"
+    android:layout_marginTop="@dimen/activity_search_record_card_item_divider"
+    android:layout_marginBottom="@dimen/activity_search_record_card_item_divider"
+    app:cardCornerRadius="@dimen/activity_search_record_genealogy_order_icon_height"
+    app:cardBackgroundColor="@color/grayWhite"
+    app:cardElevation="@dimen/activity_search_record_card_comment_image_height">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_search_record_card_head_image_size"
+        android:layout_marginRight="@dimen/activity_search_record_card_head_image_size"
+        android:layout_marginTop="@dimen/activity_search_record_card_item_divider"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_search_record_card_title_height">
+
+            <ImageView
+                android:id="@+id/search_record_author_image"
+                android:layout_width="@dimen/activity_search_record_card_head_image_size"
+                android:layout_height="@dimen/activity_search_record_card_head_image_size"
+                android:src="@mipmap/head_image1"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/search_record_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/search_record_author_image"
+                android:layout_marginStart="@dimen/activity_main_margin1"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/search_record_share"
+                android:layout_width="@dimen/activity_search_record_card_share_image_width"
+                android:layout_height="@dimen/activity_search_record_card_share_image_height"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/share"
+                android:layout_centerVertical="true"
+                android:clickable="true"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/search_record_card_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_search_record_card_content_image_height"
+            android:layout_marginTop="@dimen/activity_main_margin1"
+            android:layout_marginBottom="@dimen/activity_main_margin1"
+            android:scaleType="fitXY"
+            android:clickable="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_search_record_card_title_height">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="@dimen/activity_search_record_card_location_image_width"
+                    android:layout_height="@dimen/activity_search_record_card_location_image_height"
+                    android:src="@mipmap/location"/>
+
+                <TextView
+                    android:id="@+id/search_record_location_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_main_margin1"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/activity_search_record_card_location_title_size"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/search_record_love"
+                android:layout_width="@dimen/activity_search_record_card_comment_image_height"
+                android:layout_height="@dimen/activity_search_record_card_comment_image_height"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/love"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/search_record_comment"
+                android:layout_width="@dimen/activity_search_record_card_location_image_height"
+                android:layout_height="@dimen/activity_search_record_card_comment_image_height"
+                android:layout_toStartOf="@id/search_record_love"
+                android:layout_marginEnd="@dimen/activity_main_margin2"
+                android:src="@mipmap/comment"
+                android:layout_centerVertical="true"
+                android:clickable="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

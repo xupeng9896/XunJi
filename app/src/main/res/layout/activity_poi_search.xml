@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_module_toolbar"/>
+    
+    <com.example.xupeng.xunji.utils.MyEditText
+        android:id="@+id/poi_search_keyword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/my_edit_style"
+        android:hint="请输入地址关键字搜索"
+        android:paddingLeft="@dimen/activity_search_record_card_item_divider"
+        android:textColor="@color/blackGray"
+        android:textSize="@dimen/activity_search_tech_top_card_author" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="@dimen/activity_main_margin1"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/poi_search_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

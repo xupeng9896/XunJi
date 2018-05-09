@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/personal_post"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_main_second_divider">
+
+        <com.angel.view.SWImageView
+            android:id="@+id/authorImage"
+            android:layout_width="@dimen/activity_main_second_divider_image"
+            android:layout_height="@dimen/activity_main_second_divider_image"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/activity_main_margin2"
+            app:type="circle"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_main_margin2"
+            android:layout_marginTop="@dimen/activity_main_margin1"
+            android:layout_toEndOf="@id/authorImage"
+            android:textSize="@dimen/activity_main_second_divider_title" />
+
+        <TextView
+            android:id="@+id/textContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textTitle"
+            android:layout_marginBottom="@dimen/activity_main_margin1"
+            android:layout_marginStart="@dimen/activity_main_margin2"
+            android:layout_toEndOf="@id/authorImage"
+            android:textSize="@dimen/activity_main_second_divider_content" />
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/activity_main_margin2"
+            android:textSize="@dimen/activity_main_second_divider_time" />
+
+        <ImageView
+            android:id="@+id/main_love"
+            android:layout_width="@dimen/activity_main_margin2"
+            android:layout_height="@dimen/activity_main_margin2"
+            android:layout_toStartOf="@id/textTime"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/activity_main_margin1"
+            android:src="@mipmap/love"
+            android:clickable="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/content_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_main_other_column_height"
+        android:scaleType="fitXY" />
+</LinearLayout>

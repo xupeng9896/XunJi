@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首页banner"
+            android:textSize="@dimen/activity_personal_choose_text_size"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_main_margin2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/article_image" />
+
+            <ImageView
+                android:id="@+id/main_banner_image"
+                android:layout_width="@dimen/drawer_layout_width"
+                android:layout_height="@dimen/activity_register_edit_text_width"
+                android:layout_marginTop="@dimen/activity_main_margin2"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:background="@color/gray"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@mipmap/posted" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_login_other_login_image_width"
+            android:layout_marginTop="@dimen/activity_main_margin2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/article_title" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/my_edit_style"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.example.xupeng.xunji.utils.MyEditText
+                    android:id="@+id/main_banner_title"
+                    android:layout_width="@dimen/activity_main_top_column"
+                    android:layout_height="match_parent"
+                    android:background="@null" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_main_margin2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/article_content" />
+
+            <LinearLayout
+                android:layout_width="@dimen/activity_main_top_column"
+                android:layout_height="@dimen/activity_register_edit_text_width"
+                android:background="@drawable/my_edit_style">
+
+                <com.example.xupeng.xunji.utils.MyEditText
+                    android:id="@+id/main_banner_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/main_banner_publish"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="end|bottom"
+        android:layout_weight="1"
+        android:text="@string/publish" />
+</LinearLayout>

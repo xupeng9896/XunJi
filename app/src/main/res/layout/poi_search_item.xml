@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#d1cece"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/poititle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:text=""
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/poititle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textSize="16sp"/>
+
+</LinearLayout>

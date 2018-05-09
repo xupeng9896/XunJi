@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_module_toolbar"/>
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_main_top_left_corner_height"
+        android:layout_marginStart="@dimen/activity_main_margin2"
+        android:layout_marginEnd="@dimen/activity_main_margin2"
+        android:imeOptions="actionSearch"
+        android:background="@drawable/search_style"
+        app:defaultQueryHint="搜索">
+    </android.support.v7.widget.SearchView>
+
+    <ListView
+        android:id="@+id/search_result_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_main_margin2" />
+</LinearLayout>

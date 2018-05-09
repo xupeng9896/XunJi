@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/search_skill_top_cardView"
+        android:layout_width="@dimen/activity_search_tech_top_card_width"
+        android:layout_height="@dimen/activity_search_tech_top_card_height"
+        android:layout_marginTop="@dimen/activity_search_record_card_item_divider"
+        android:layout_marginLeft="@dimen/activity_main_margin2"
+        android:layout_marginRight="@dimen/activity_main_margin2"
+        app:cardCornerRadius="@dimen/activity_search_record_card_location_image_height"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:layout_width="@dimen/activity_search_tech_top_card_inside_width"
+            android:layout_height="@dimen/activity_search_tech_top_card_height"
+            android:padding="@dimen/activity_main_margin2"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/search_skill_top_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_search_tech_top_card_image_height"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/search_skill_top_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标题"
+                android:textSize="@dimen/activity_search_tech_top_card_title"
+                android:layout_below="@id/search_skill_top_image"
+                android:layout_marginTop="@dimen/activity_main_margin1" />
+
+            <TextView
+                android:id="@+id/search_skill_top_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="作者"
+                android:textSize="@dimen/activity_search_tech_top_card_author"
+                android:layout_below="@id/search_skill_top_title"
+                android:layout_marginTop="@dimen/activity_personal_choose_left_margin"/>
+
+            <TextView
+                android:id="@+id/search_skill_top_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容简介"
+                android:textSize="@dimen/activity_search_tech_top_card_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_below="@id/search_skill_top_author"
+                android:layout_marginTop="@dimen/activity_main_margin1"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
